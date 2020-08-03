@@ -1,0 +1,82 @@
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector
+            android:name="vector"
+            android:width="48dp"
+            android:height="48dp"
+            android:viewportWidth="48"
+            android:viewportHeight="48"
+            android:tint="?attr/colorControlNormal"
+            >
+            <group
+                android:name="group"
+                android:pivotX="24"
+                android:pivotY="24">
+                <path
+                    android:name="path"
+                    android:pathData="M 4 24 C 4.017 18.709 6.133 13.634 9.88 9.899 C 13.628 6.163 18.709 4.063 24 4.063 C 29.291 4.063 34.372 6.163 38.12 9.899 C 41.867 13.634 43.983 18.709 44 24 C 43.983 29.291 41.867 34.366 38.12 38.101 C 34.372 41.837 29.291 43.937 24 43.937 C 18.709 43.937 13.628 41.837 9.88 38.101 C 6.133 34.366 4.017 29.291 4 24 Z"
+                    android:strokeColor="#000000"
+                    android:strokeWidth="3"
+                    android:trimPathOffset="0"
+                    android:trimPathStart="0"
+                    android:strokeLineCap="round"
+                    android:strokeLineJoin="round"/>
+            </group>
+        </vector>
+    </aapt:attr>
+    <target android:name="path">
+        <aapt:attr name="android:animation">
+            <set>
+              <objectAnimator
+                    android:propertyName="trimPathStart"
+                    android:duration="1333"
+                    android:valueFrom="0"
+                    android:valueTo="0.75"
+                    android:repeatCount="1"
+                    android:valueType="floatType">
+                  <aapt:attr name="android:interpolator">
+                      <pathInterpolator
+                          android:pathData="L0.5,0 C 0.7,0 0.6,1 1,1"/>
+                  </aapt:attr>
+              </objectAnimator>
+
+                <objectAnimator
+                    android:propertyName="trimPathEnd"
+                    android:duration="1333"
+                    android:valueFrom="0.03"
+                    android:valueTo="0.78"
+                    android:repeatCount="1"
+                    android:valueType="floatType"
+                    >
+                    <aapt:attr name="android:interpolator">
+                        <pathInterpolator
+                            android:pathData="C0.2,0 0.1,1 0.5,0.96 C 0.96666666666,0.96 0.99333333333,1 1,1"/>
+                    </aapt:attr>
+                </objectAnimator>
+
+                <objectAnimator
+                    android:propertyName="trimPathOffset"
+                    android:duration="1333"
+                    android:valueFrom="0"
+                    android:valueTo="0.25"
+                    android:repeatCount="1"
+                    android:valueType="floatType"
+                    android:interpolator="@android:anim/linear_interpolator"/>
+            </set>
+        </aapt:attr>
+    </target>
+    <target android:name="group">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:propertyName="rotation"
+                android:duration="2666"
+                android:valueFrom="0"
+
+                android:valueTo="720"
+                android:valueType="floatType"
+                android:interpolator="@android:anim/linear_interpolator"/>
+        </aapt:attr>
+    </target>
+</animated-vector>

@@ -1,0 +1,3 @@
+include ':SmartProgressImageView'
+include ':app'
+rootProject.name = "ProgressImageView"
