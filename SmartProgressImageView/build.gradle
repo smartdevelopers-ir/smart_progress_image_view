@@ -2,13 +2,13 @@ apply plugin: 'com.android.library'
 apply plugin: 'maven-publish'
 apply plugin: 'signing'
 android {
-    compileSdkVersion 29
+    compileSdkVersion 31
 
     defaultConfig {
         minSdkVersion 19
-        targetSdkVersion 29
-        versionCode 1
-        versionName "1.0"
+        targetSdkVersion 31
+        versionCode 2
+        versionName "1.2"
         setProperty("archivesBaseName","smart_progress_image_view")
 
         consumerProguardFiles "consumer-rules.pro"
@@ -20,12 +20,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    buildToolsVersion '29.0.3'
+
 }
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
-    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.appcompat:appcompat:1.4.0'
 
 }
 
@@ -40,7 +40,7 @@ afterEvaluate {
                 // You can then customize attributes of the publication as shown below.
                 groupId = 'ir.smartdevelopers'
                 artifactId = 'smart_progress_image_view'
-                version = 1.0
+
                 pom {
                     name = 'smart_progress_image_view'
                     description = 'Create table in android easily'
@@ -90,7 +90,7 @@ afterEvaluate {
 
 
 group = 'ir.smartdevelopers'
-version = '1.0'
+version = '1.9'
 
 signing {
     sign configurations.archives

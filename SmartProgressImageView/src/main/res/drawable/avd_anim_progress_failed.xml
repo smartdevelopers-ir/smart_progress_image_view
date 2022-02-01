@@ -1,18 +1,21 @@
-<animated-vector
+<animated-vector xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:aapt="http://schemas.android.com/aapt">
+    xmlns:aapt="http://schemas.android.com/aapt"
+    tools:ignore="NewApi">
     <aapt:attr name="android:drawable">
         <vector
             android:name="vector"
             android:width="48dp"
             android:height="48dp"
-            android:tint="?attr/colorControlNormal"
             android:viewportWidth="48"
-            android:viewportHeight="48">
+            android:viewportHeight="48"
+
+
+            >
             <path
                 android:name="slash"
                 android:pathData="M 4 24 C 3.995 18.846 5.982 13.885 9.543 10.16 C 13.105 6.435 17.971 4.227 23.12 4 C 24.121 3.966 25.123 4 26.12 4.1 L 27.78 4.43 C 29.147 4.671 30.487 5.046 31.78 5.55 C 33.266 6.11 34.53 7.139 35.38 8.48 C 35.601 9.026 35.7 9.614 35.673 10.202 C 35.645 10.791 35.491 11.367 35.22 11.89 C 34.431 13.095 33.531 14.224 32.53 15.26 C 31.81 16.09 19.65 27.86 16 32"
-                android:strokeColor="#000000"
+                android:strokeColor="@color/SPIV_colorFailed"
                 android:strokeWidth="3"
                 android:trimPathStart="0.03"
                 android:strokeLineCap="round"
@@ -25,7 +28,7 @@
                 <path
                     android:name="circl"
                     android:pathData="M 24 4 C 18.698 4 13.607 6.109 9.858 9.858 C 6.109 13.607 4 18.698 4 24 C 4 29.302 6.109 34.393 9.858 38.142 C 13.607 41.891 18.698 44 24 44 C 29.302 44 34.393 41.891 38.142 38.142 C 41.891 34.393 44 29.302 44 24 C 44 18.698 41.891 13.607 38.142 9.858 C 34.393 6.109 29.302 4 24 4 Z"
-                    android:strokeColor="#000000"
+                    android:strokeColor="@color/SPIV_colorFailed"
                     android:strokeWidth="3"
                     android:trimPathStart="1"
                     android:trimPathEnd="1"
@@ -35,7 +38,7 @@
             <path
                 android:name="back_slash"
                 android:pathData="M 16 16 L 32 32"
-                android:strokeColor="#000000"
+                android:strokeColor="@color/SPIV_colorFailed"
                 android:strokeWidth="3"
                 android:trimPathEnd="0"
                 android:strokeLineCap="round"

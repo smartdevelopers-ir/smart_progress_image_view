@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SPIV_DefualtStyle">
+        <item name="SPIV_ProgressNormalColor">@color/SPIV_colorNormal</item>
+        <item name="SPIV_ProgressFailedColor">@color/SPIV_colorFailed</item>
+        <item name="SPIV_ProgressDoneColor">@color/SPIV_colorDone</item>
+        <item name="SPIV_NoConnectionColor">@color/SPIV_colorNoConnection</item>
+    </style>
+</resources>

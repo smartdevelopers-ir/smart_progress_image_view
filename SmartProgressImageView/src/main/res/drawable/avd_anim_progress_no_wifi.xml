@@ -1,14 +1,17 @@
-<animated-vector
+<animated-vector xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:aapt="http://schemas.android.com/aapt">
+    xmlns:aapt="http://schemas.android.com/aapt"
+    tools:ignore="NewApi">
     <aapt:attr name="android:drawable">
         <vector
             android:name="vector"
             android:width="48dp"
             android:height="48dp"
-            android:tint="?attr/colorControlNormal"
             android:viewportWidth="48"
-            android:viewportHeight="48">
+            android:viewportHeight="48"
+
+
+            >
             <path
                 android:name="slash"
                 android:pathData="M 4 24 C 3.995 18.846 5.982 13.885 9.543 10.16 C 13.105 6.435 17.971 4.227 23.12 4 C 24.121 3.966 25.123 4 26.12 4.1 L 27.78 4.43 C 29.147 4.671 30.487 5.046 31.78 5.55 C 33.266 6.11 34.53 7.139 35.38 8.48 C 35.601 9.026 35.7 9.614 35.673 10.202 C 35.645 10.791 35.491 11.367 35.22 11.89 C 34.431 13.095 33.531 14.224 32.53 15.26 C 31.81 16.09 19.65 27.86 16 32"
@@ -72,7 +75,7 @@
                     android:startOffset="77"
                     android:duration="479"
                     android:valueFrom="0.03"
-                    android:valueTo="0.66"
+                    android:valueTo="0.67"
                     android:valueType="floatType"
                     android:interpolator="@android:interpolator/fast_out_slow_in"/>
             </set>

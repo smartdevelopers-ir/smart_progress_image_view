@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SmartProgressImageView">
+        <attr name="SPIV_NoConnectionColor" format="color"/>
+        <attr name="SPIV_ProgressFailedColor" format="color"/>
+        <attr name="SPIV_ProgressDoneColor" format="color"/>
+        <attr name="SPIV_ProgressNormalColor" format="color"/>
+    </declare-styleable>
+
+</resources>

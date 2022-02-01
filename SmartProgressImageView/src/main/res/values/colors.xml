@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="SPIV_colorNormal">#05F378</color>
+    <color name="SPIV_colorFailed">#9F0000</color>
+    <color name="SPIV_colorNoConnection">#9F0000</color>
+    <color name="SPIV_colorDone">#0B8F13</color>
+</resources>
