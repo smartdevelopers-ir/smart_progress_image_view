@@ -71,10 +71,6 @@ public class SmartProgressImageView extends AppCompatImageView {
             public void onAnimationEnd(Drawable drawable) {
                 super.onAnimationEnd(drawable);
                 if (!stopLoading) {
-                    if (loadingAnimation.isRunning()) {
-                        loadingAnimation.stop();
-                    }
-
                     new Handler(Looper.getMainLooper()).post(() -> {
                         loadingAnimation.start();
                     });
